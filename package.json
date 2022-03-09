@@ -1,0 +1,23 @@
+{
+  "name": "enseignes-dufour",
+  "version": "1.0.0",
+  "description": "Ecommerce website for Enseignes Dufour, located il France",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./src/main.scss ./public/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorianlongepee/enseignes-dufour.git"
+  },
+  "author": "Dorian Longépée",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorianlongepee/enseignes-dufour/issues"
+  },
+  "homepage": "https://github.com/dorianlongepee/enseignes-dufour#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
+}
