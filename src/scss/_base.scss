@@ -1,0 +1,47 @@
+//Variables
+
+$primary-color:#25B1A2;
+$accent-color:#F29200;
+
+$light:#FAFAFA;
+$dark:#4A4A4A;
+
+$darker-primary : darken($primary-color, 10%);
+
+//Mixins
+
+@mixin grid-layout($columns:12, $rows:1fr){
+    display: grid;
+    grid-template: $rows / repeat($columns, 1fr);
+    column-gap: 20px;
+}
+
+@mixin padding($padding-top:0, $padding-bot:0){
+    padding: $padding-top 10vw $padding-bot 10vw;
+}
+
+//Base
+body {
+    font-size: 18px;
+    background: $light;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h4 {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+h3{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: $primary-color;
+  font-size: 1.5rem;
+}
+
+strong{
+  color: $accent-color;
+}
+
+
+

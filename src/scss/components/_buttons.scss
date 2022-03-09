@@ -1,0 +1,21 @@
+.btn{
+    background-color: $accent-color;
+    padding: 16px 26px;
+    border-radius: 6px;
+    color: $light;
+
+    &--cart{
+        padding: 1rem;
+    }
+}
+
+.back-to-top{
+    background-color: $accent-color;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
