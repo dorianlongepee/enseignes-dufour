@@ -1,0 +1,78 @@
+$utilities: (
+  "height":
+    map-merge(
+      map-get($utilities, "height"),
+      (
+        responsive:true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "height"), "values"),
+            (
+              200: 200px,
+              300: 300px,
+            )
+          ),
+      )
+    ),
+
+  "top": (
+    responsive: true,
+    property: top,
+    values:
+      map-merge(
+        map-get(map-get($utilities, "top"), "values"),
+        (
+          20: 20%,
+        )
+      ),
+  ),
+  "start": (
+    responsive: true,
+    property: left,
+    class: start,
+    values:
+      map-merge(
+        map-get(map-get($utilities, "top"), "values"),
+        (
+          80: 80%,
+        )
+      ),
+  ),
+  "width": (
+    property: width,
+    class: w,
+    responsive: true,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+  "translate-middle": (
+    property: transform,
+    responsive: true,
+    class: translate-middle,
+    values: (
+      null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%),
+      none: translate(0, 0),
+    ),
+  ),
+);
+
+$utilities : map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+  )
+
+);
+

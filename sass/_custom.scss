@@ -1,0 +1,62 @@
+// Global 
+
+$font-family-base: Montserrat, sans-serif;
+.lucky-font {
+  font-family: "Luckiest Guy", serif;
+}
+.max-width-body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: $white-1 !important;
+}
+
+// Custom CSS
+
+.header{
+  z-index: 9999;
+}
+
+.hero{
+  height: 100vh;
+  background: no-repeat center url("/assets/img/dufour-hero.jpg");
+  background-size: cover;
+}
+
+.category{
+  background: center no-repeat;
+  background-size: 110%;
+  transition: .5s ease-in-out background-size;
+  
+
+  &-1{
+    background-image: url("/assets/img/marquage.jpg");
+  }
+
+  &-2{
+    background-image: url("/assets/img/impression.jpg");
+  }
+
+  &-3{
+    background-image: url("/assets/img/stickers.jpg");
+  }
+
+  &-4{
+    background-position: top;
+    background-image: url("/assets/img/goodies.jpg");
+  }
+
+  &:hover{
+    background-size: calc(110% + 10%);
+    transition: .5s ease-in-out background;
+  }
+}
+
+.category-banner{
+  background: no-repeat cover ;
+  background-position: center;
+  background-image: url("/assets/img/stickers-cover.jpg");
+  filter: brightness(.5);
+}

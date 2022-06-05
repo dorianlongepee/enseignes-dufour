@@ -1,0 +1,26 @@
+$dark-1: #1e1e1e;
+$white-1: #F3F3F3;
+$main-green: #25b1a2;
+$shade-green: #1c877b;
+$main-orange: #f29200;
+$shade-orange: #d78100;
+
+$custom-theme-colors: (
+  "main-green": $main-green,
+  "shade-green-1": $shade-green,
+  "main-orange": $main-orange,
+  "shade-orang-2": $shade-orange,
+  "dark-1": $dark-1,
+  "white-1": $white-1
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@each $key, $val in $custom-theme-colors {
+  .bg-#{$key} {
+    background-color: $val!important;
+  }
+  .text-#{$key} {
+    color: $val!important;
+  }
+}

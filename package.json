@@ -1,0 +1,23 @@
+{
+  "name": "enseignes-dufour",
+  "version": "2.0.0",
+  "description": "Better UI with Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass sass/global.scss styles/raw/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorianlongepee/enseignes-dufour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorianlongepee/enseignes-dufour/issues"
+  },
+  "homepage": "https://github.com/dorianlongepee/enseignes-dufour#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
